@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View Spotlighted Program</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="../public/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navlist">
+        <p class="title">
+          Spotlight view
+          </p>
+        <li><a href="/allprograms">View all programs</a></li>
+        <li><a href="/public/programform.html">Create a new Program</a></li>
+        <li><a href="/allprofile">View all profiles</a></li>
+        <li><a href="/allSuggestedEdits">View User Suggested Edits</a></li>
+
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="row h-100">
+        <div class="col-lg-4"><!-- this is just here to center the next column --></div>
+        <div class="col-lg-4 text-center my-auto">
+            <% if (spotlightedPrograms && spotlightedPrograms.length > 0) { %>
+              <p>
+              Here is the current spotlighted program (for all users):
+              </p>
+              <p>
+              <table class="table table-bordered">
+                <% spotlightedPrograms.forEach( (spotlightedPrograms) => { %>
+                  <tr>      
+                    <td><b><%= spotlightedPrograms.name %></b></td>
+                    <td><b><%= spotlightedPrograms.category %></b></td>
+                    <td><a href="/deleteSpotlight?name=<%= spotlightedPrograms.name %>">delete</a></td>
+                  </tr>                  
+                <% }) %>
+              </table>
+              </p>
+              <p>
+                <a href="/all">See all programs</a>                    
+            </p>    
+            <% } else { %>
+              <p> There isn't a spotlighted program! </p>
+            <% } %>
+        </div>
+
+
+        <div class="col-lg-4"><!-- this is just here to center the previous column --></div>
+      </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

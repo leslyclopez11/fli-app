@@ -1,0 +1,131 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add New Program</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navlist">
+        <p class="title">
+          New Program
+          </p>
+          <li><a href="/public/allprograms">View all programs</a></li>
+          <li><a href="/allprofile">View all profiles</a></li>
+          <li><a href="/allSuggestedEdits">View User Suggested Edits</a></li>
+          <li><a href="/allSpotlighted">View Spotlighted Program</a></li>
+
+      </ul>
+    </nav>
+  
+    <div class="container">
+        <div class="row h-100">
+            <div class="col-lg-4"><!-- this is just here to center the next column --></div>
+
+            <div class="col-lg-4 text-center my-auto">
+                <p>
+                  <form action="/create" method="post">
+                    <div class="mb-3">
+                      <label class="form-label">Name</label>
+                      <input type="text" class="form-control" name="name" required>
+                      <div id="nameHelp" class="form-text">This is required and must be distinct.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Website Link</label><!-- CHANGE THIS -->
+                      <input type="url" class="form-control" name="link" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label class="form-label">Category</label><!-- CHANGE LATER -->
+                      <select id = "dropdownCategory" name = "category" multiple>
+                        <option value="Academic">Academic</option>
+                        <option value="Business">Business</option>
+                        <option value="Career Development">Career Development</option>
+                        <option value="Education">Education</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Health Care">Health Care</option>
+                        <option value="Law">Law</option>
+                        <option value="Non-Profit">Non-Profit</option>
+                        <option value="Research">Research</option>
+                        <option value="Science">Science</option>
+                        <option value="Social Work">Social Work</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Volunteering">Volunteering</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Location</label><!-- CHANGE LATER -->
+                        <select id = "dropdownCategory" name = "location" multiple>
+                          <option value="Remote"> Remote </option>
+                          <option value="In the U.S."> In the U.S. </option>
+                          <option value="Outside the U.S."> Outside the U.S. </option>
+                          <option value="Multiple Locations"> Multiple Locations </option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Documented Status</label><!-- CHANGE LATER -->
+                      <select name = "documentedStatus" id = "dropdownCategory">
+                        <option value="Only U.S. Citizens"> Only U.S. Citizens </option>
+                        <option value="U.S. Citizens and Permanent Residents"> U.S. Citizens & Permanent Residents </option>
+                        <option value="DACAmented Applicants Accepted">DACAmented Applicants Accepted</option>
+                        <option value="Undocumented Applicants Accepted"> Undocumented Applicants Accepted </option>
+                        <option value="All">All</option>
+                      </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label class="form-label">Deadline</label><!-- CHANGE THIS -->
+                      <input type="date" class="form-control" name="deadline">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Applicable Year</label><!-- CHANGE THIS -->
+                      <select name = "applicableYear" multiple>
+                        <option value="Freshman">Freshman</option>
+                        <option value="Sophomore">Sophomore</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Senior">Senior</option>
+                        <option value="Underclassmen">Underclassmen</option>
+                        <option value="Upperclassmen">Upperclassmen</option>
+                        <option value="All">All</option>
+                      </select>
+                      <!--<input type="range" class="form-control" name="applicableYear">-->
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Program Date Start</label><!-- CHANGE THIS -->
+                      <input type="date" class="form-control" name="programDates">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">GPA Requirement</label><!-- PROBABLY NOT NUMBER NEED DECIMAL -->
+                      <input type="number" step="0.01" class="form-control" name="gpaReq">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Alumni Email</label><!-- CHANGE THIS -->
+                      <input type="email" class="form-control" name="alumniEmail">
+                    </div>
+                    <input type="submit" class="btn btn-primary"></button>
+                  </form>
+                </p>
+                <p>
+                    <a href="/all">Cancel</a>
+                </p>
+            </div>
+
+            <div class="col-lg-4"><!-- this is just here to center the previous column --></div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="app.css">
+    <script>
+        function editProfile() {
+            document.getElementById('profileInfo').style.display = 'none';
+            document.getElementById('editProfileForm').style.display = 'block';
+        }
+
+        function editPassword() {
+            document.getElementById('profileInfo').style.display = 'none';
+            document.getElementById('editPasswordForm').style.display = 'block';
+        }
+
+        function cancelEdit() {
+            document.getElementById('profileInfo').style.display = 'block';
+            document.getElementById('editProfileForm').style.display = 'none';
+            document.getElementById('editPasswordForm').style.display = 'none';
+        }
+
+        function logOut() {
+            window.location.href = '/logout'; // Redirect to the logout endpoint
+        }
+    </script>
+</head>
+<body>
+    <div id="profileInfo">
+        <h2>Profile</h2>
+        <p>Username: <span id="username"></span></p>
+        <p>Name: <span id="name"></span></p>
+        <p>Pronouns: <span id="pronouns"></span></p>
+        <p>Class Year: <span id="classyear"></span></p>
+        <button type="button" onclick="editProfile()">Edit Profile</button>
+        <button type="button" onclick="editPassword()">Change Password</button>
+        <button type="button" onclick="logOut()">Log Out</button>
+    </div>
+
+    <div id="editProfileForm" style="display:none;">
+        <h2>Edit Profile</h2>
+        <form id="updateProfileForm" action="/updateProfile" method="post">
+            <input type="hidden" name="username" id="editUsername">
+            <div class="input-field">
+                <input type="text" name="name" id="editName" placeholder="Enter Name">
+            </div>
+            <div class="input-field">
+                <input type="text" name="pronouns" id="editPronouns" placeholder="Enter Pronouns">
+            </div>
+            <div class="input-field">
+                <input type="text" name="classyear" id="editClassyear" placeholder="Enter Class Year">
+            </div>
+            <input type="submit" value="Save Changes">
+            <button type="button" onclick="cancelEdit()">Cancel</button>
+        </form>
+    </div>
+
+    <div id="editPasswordForm" style="display:none;">
+        <h2>Change Password</h2>
+        <form id="updatePasswordForm" action="/updatePassword" method="post">
+            <input type="hidden" name="username" id="passwordUsername">
+            <div class="input-field">
+                <input type="password" name="currentPassword" id="currentPassword" placeholder="Current Password" required>
+            </div>
+            <div class="input-field">
+                <input type="password" name="newPassword" id="newPassword" placeholder="New Password" required>
+            </div>
+            <input type="submit" value="Change Password">
+            <button type="button" onclick="cancelEdit()">Cancel</button>
+        </form>
+    </div>
+
+    <script>
+        window.onload = function() {
+            fetch('/getProfile')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('username').innerText = data.username;
+                    document.getElementById('name').innerText = data.name;
+                    document.getElementById('pronouns').innerText = data.pronouns;
+                    document.getElementById('classyear').innerText = data.classyear;
+
+                    document.getElementById('editUsername').value = data.username;
+                    document.getElementById('editName').value = data.name;
+                    document.getElementById('editPronouns').value = data.pronouns;
+                    document.getElementById('editClassyear').value = data.classyear;
+
+                    document.getElementById('passwordUsername').value = data.username;
+                });
+        }
+    </script>
+</body>
+</html>
