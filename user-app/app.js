@@ -1,7 +1,8 @@
 const express = require('express');
 const sessions = require('express-session');
 const cookieParser = require("cookie-parser");
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
+const mongoose = require('../fli-app/db');
 const User = require('./RegisterUser');
 
 
@@ -32,7 +33,7 @@ app.use(cookieParser());
 
 
 //connect?
-mongoose.connect('mongodb://127.0.0.1:27017/myDatabase');
+//mongoose.connect('mongodb://127.0.0.1:27017/myDatabase');
 // a variable to save a session
 var session;
 
