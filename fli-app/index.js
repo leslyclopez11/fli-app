@@ -1,3 +1,4 @@
+const mongoose = require('./db.js');
 // set up Express
 var express = require('express');
 var app = express();
@@ -16,6 +17,8 @@ var Program = require('./Program.js');
 app.use(express.static(path.join(__dirname, 'fli-app')));
 
 var editCount = 1;
+
+
 
 app.use('/register', (req,res) => {
     //http://localhost:3010/register?name=Crystal&pronouns=she/her&username=csecair1&password=hello&classyear=2025&programs=HELLO&programs=ANOTHERONE
