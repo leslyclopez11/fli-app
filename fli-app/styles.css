@@ -1,16 +1,17 @@
 /* purple: #907ce1
    light purple: #dfd9f6
    black: 1c1c1d
-   white:f9faf4
+   white: f9faf4
    grey: #dbdbdb
 */
 
-/* * * * * * * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+/* * * * * * * *  * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700;800&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   background-color: #f9faf4;
 }
 
@@ -30,6 +31,11 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
+}
+
+#nav img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Keeps the aspect ratio intact */
 }
 
 ul {
@@ -90,6 +96,9 @@ hr {
   border-radius: 25px;
   /* border: 2px solid orange; */
   background-color: #dbdbdb;
+  background-size: cover;
+  background-position: center;
+  background-image: url('images/pexels-canvastudio-3153207.jpg ');
 }
 
 #about-img-separator {
@@ -106,6 +115,9 @@ hr {
   border-radius: 25px;
   /* border: 2px solid orange; */
   background-color: #dfd9f6;
+  background-image: url('images/pexels-fauxels-3183183.jpg ');
+  background-position: center;
+  background-size: cover;
 }
 
 #about-img-3 {
@@ -113,9 +125,12 @@ hr {
   border-radius: 25px;
   /* border: 2px solid orange; */
   background-color: #907ce1;
+  background-image: url('images/pexels-fauxels-3184291.jpg ');
+  background-position: center;
+  background-size: cover;
 }
 
-/* Section 2: Mission Statement * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+/* Section 2: Mission Statement * *  * *  * *  * *  * *  * *  * *  * *  * * */
 
 #mission-outer-div {
   display: flex;
@@ -160,9 +175,11 @@ hr {
 
 #mission-img {
   width: 100%;
-  height: 40%;
+  height: 60%;
   border-radius: 70px;
   background-color: #dfd9f6;
+  object-position: center;
+  object-fit: cover;
 }
 
 #mission-right-div {
@@ -182,7 +199,7 @@ hr {
   /* border: 2px solid blue; */
 }
 
-/* Section 3: Tools * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+/* Section 3: Tools * *  * *  * *  * *  * *  * *  * *  * *  * * */
 
 #tools-outer-div {
   display: flex;
@@ -247,17 +264,27 @@ hr {
   margin: 100px 20px 20px 50px;
   background-color: #907ce1;
   color: #dfdfdf;
+  /*background-image: url('images/pexels-thisisengineering-3861973.jpg'); */
+  background-position: center;
+  background-size: cover;
 }
 
 #tools-right-2 {
   margin: 0px 20px 0px 50px;
   background-color: #dbdbdb;
+  /*background-image: url('images/pexels-cottonbro-3205570.jpg'); */
+  background-position: center;
+  background-size: cover;
+  
 }
 
 #tools-right-3 {
   margin: 100px 50px 20px 0px;
   background-color: #1c1c1c;
   color: #dfdfdf;
+   /*background-image: url('images/pexels-polina-zimmerman-3782228.jpg');*/
+  background-position: center;
+  background-size: cover;
 }
 
 #tools-right-4 {
@@ -265,7 +292,7 @@ hr {
   flex-direction: column-reverse;
 }
 
-/* Section 4: Services * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+/* Section 4: Services * *  * *  * *  * *  * *  * *  * *  * *  * * */
 
 #services {
   background-color: #1c1c1c;
@@ -290,7 +317,7 @@ hr {
 }
 
 #services-header {
-  font-size: 45px;
+  font-size: 55px;
 }
 
 #services-header h1 {
@@ -303,10 +330,27 @@ hr {
   flex-direction: column;
   /* justify-content: space-evenly; */
   /* align-items: space-evenly; */
-  font-size: 15px;
+  font-size: 20px;
   padding: 50px 10px;
   /* border: 2px solid green; */
 }
+#services-right-div p {
+  padding-right: 30px; /* Adjust the padding value as needed */
+  padding-left: 200px;
+  text-align: left;
+}
+#services-right-3 p {
+  padding-left: 125px; /* Adjust the padding value as needed */
+}
+
+/* Ensure that h2 elements within the same section are not affected */
+#services-right-div h2 {
+  padding: 0; /* Reset padding if needed */
+}
+
+
+
+
 
 .services-mini-div {
   height: 20%;
@@ -336,7 +380,7 @@ hr {
   /* border: 2px solid green; */
 }
 
-/* Section 5: Feedback * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+/* Section 5: Feedback * *  * *  * *  * *  * *  * *  * *  * *  * * */
 
 #feedback-outer-div {
   display: flex;
@@ -364,7 +408,7 @@ hr {
 
 .feedback-mini-div {
   width: 45%;
-  height: 80%;
+  height: 100%;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -403,7 +447,7 @@ hr {
   color: #f9faf4;
 }
 
-/* Section 6: Contact * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+/* Section 6: Contact * *  * *  * *  * *  * *  * *  * *  * *  * * */
 
 #contact {
   background-color: #1c1c1c;
@@ -447,6 +491,11 @@ hr {
   flex-direction: column;
   /* border: 2px solid green; */
 }
+#contact img {
+  width: 600px;
+  padding-left: 150px;
+  padding-top: 150px;
+}
 
 button {
   width: 220px;
@@ -469,4 +518,208 @@ button:hover {
 
 footer {
   text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+  #nav {
+    padding: 15px 20px;
+  }
+
+  #about {
+    width: 40%;
+    margin: 50px 30px;
+  }
+
+  #about-header {
+    font-size: 50px;
+  }
+
+  #about-text {
+    font-size: 18px;
+  }
+
+  #mission-header {
+    font-size: 40px;
+  }
+
+  #tools-header {
+    font-size: 40px;
+  }
+
+  .tools-mini-div {
+    width: 50%;
+  }
+
+  #services-header {
+    font-size: 40px;
+  }
+
+  .services-mini-div {
+    height: 25%;
+
+  }
+
+  #feedback-outer-div h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  #nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 10px;
+  }
+
+  #about {
+    width: 100%;
+    margin: 30px 10px;
+  }
+
+  #about-header {
+    font-size: 40px;
+  }
+
+  #about-text {
+    font-size: 16px;
+  }
+
+  #mission-header {
+    font-size: 35px;
+  }
+
+  #tools-header {
+    font-size: 35px;
+  }
+
+  .tools-mini-div {
+    width: 100%;
+  }
+
+  #services-header {
+    font-size: 35px;
+  }
+
+  .services-mini-div {
+    height: 30%;
+  }
+
+  #feedback-outer-div h1 {
+    font-size: 45px;
+  }
+
+  button {
+    width: 180px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav {
+    padding: 15px;
+  }
+
+  #about {
+    width: 100%;
+    margin: 20px;
+  }
+
+  #about-header {
+    font-size: 35px;
+  }
+
+  #about-text {
+    font-size: 14px;
+  }
+
+  #mission-header {
+    font-size: 30px;
+  }
+
+  #tools-header {
+    font-size: 30px;
+  }
+
+  .tools-mini-div {
+    width: 100%;
+    height: auto;
+  }
+
+  #services-header {
+    font-size: 30px;
+  }
+
+  .services-mini-div {
+    height: auto;
+  }
+
+  #feedback-outer-div h1 {
+    font-size: 40px;
+  }
+
+  button {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  #nav {
+    flex-direction: column;
+  }
+
+  #about {
+    margin: 10px;
+  }
+
+  #about-header {
+    font-size: 30px;
+  }
+
+  #about-text {
+    font-size: 12px;
+  }
+
+  #mission-header {
+    font-size: 28px;
+  }
+
+  #tools-header {
+    font-size: 28px;
+  }
+
+  .tools-mini-div {
+    width: 100%;
+    height: auto;
+  }
+
+  #services-header {
+    font-size: 28px;
+  }
+
+  .services-mini-div {
+    height: auto;
+  }
+
+  #feedback-outer-div h1 {
+    font-size: 35px;
+  }
+
+  button {
+    width: 140px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  button {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+  }
 }
