@@ -1,0 +1,472 @@
+/* purple: #907ce1
+   light purple: #dfd9f6
+   black: 1c1c1d
+   white:f9faf4
+   grey: #dbdbdb
+*/
+
+/* * * * * * * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f9faf4;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* border: 2px solid #000; */
+}
+
+/* Section 1: Landing * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  /* border: 2px solid #000; */
+}
+
+li {
+  margin: 0 10px;
+}
+
+li a {
+  /* text-decoration: none; */
+  color: #000;
+}
+
+hr {
+  width: 90%;
+}
+
+#about {
+  /* border: 2px solid green; */
+  width: 35%;
+  margin: 50px 50px 50px 100px;
+}
+
+#about-header {
+  font-size: 60px;
+}
+
+#about-text {
+  font-size: 20px;
+}
+
+#about-img {
+  /* border: 2px solid blue; */
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#about-div {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+}
+
+#about-img-1 {
+  width: 50%;
+  height: 90%;
+  border-radius: 25px;
+  /* border: 2px solid orange; */
+  background-color: #dbdbdb;
+}
+
+#about-img-separator {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid pink; */
+  gap: 10px;
+}
+
+#about-img-2 {
+  height: 50%;
+  border-radius: 25px;
+  /* border: 2px solid orange; */
+  background-color: #dfd9f6;
+}
+
+#about-img-3 {
+  height: 50%;
+  border-radius: 25px;
+  /* border: 2px solid orange; */
+  background-color: #907ce1;
+}
+
+/* Section 2: Mission Statement * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+
+#mission-outer-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  gap: 20px;
+  /* border: 2px solid red; */
+}
+
+#mission-left-div {
+  width: 50%;
+  height: 100%;
+  color: #f9faf4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+  /* border: 2px solid green; */
+}
+
+#mission_statement {
+  background-color: #1c1c1c;
+  display: flex;
+}
+
+#mission-header {
+  color: #f9faf4;
+  font-size: 50px;
+  /* padding-top: 50px; */
+}
+
+#mission-header h1 {
+  margin: 10px;
+  /* border: 2px solid red; */
+}
+
+.purple {
+  color: #907ce1 !important;
+}
+
+#mission-img {
+  width: 100%;
+  height: 40%;
+  border-radius: 70px;
+  background-color: #dfd9f6;
+}
+
+#mission-right-div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #f9faf4;
+  /* border: 2px solid green; */
+}
+
+#mission-text {
+  width: 80%;
+  /* border: 2px solid blue; */
+}
+
+/* Section 3: Tools * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+
+#tools-outer-div {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* padding: 50px 100px; */
+  /* gap: 20px; */
+  /* border: 2px solid red; */
+}
+
+#tools-left-div {
+  width: 45%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  justify-content: space-evenly;
+  /* border: 2px solid green; */
+}
+
+#tools-header {
+  font-size: 45px;
+  padding-left: 40px;
+  /* border: 2px solid red; */
+}
+
+#tools-right-div {
+  width: 55%;
+  /* height: 80%; */
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  flex-wrap: wrap;
+  gap: 25px;
+  /* border: 2px solid green; */
+}
+
+.tools-mini-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 35%;
+  border-radius: 50px;
+  /* border: 2px solid red; */
+}
+
+.tools-mini-div p {
+  padding: 30px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.tools-mini-div img {
+  padding: 30px;
+  margin: 0;
+}
+
+#tools-right-1 {
+  margin: 100px 20px 20px 50px;
+  background-color: #907ce1;
+  color: #dfdfdf;
+}
+
+#tools-right-2 {
+  margin: 0px 20px 0px 50px;
+  background-color: #dbdbdb;
+}
+
+#tools-right-3 {
+  margin: 100px 50px 20px 0px;
+  background-color: #1c1c1c;
+  color: #dfdfdf;
+}
+
+#tools-right-4 {
+  margin: 0px 50px 0px 0px;
+  flex-direction: column-reverse;
+}
+
+/* Section 4: Services * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+
+#services {
+  background-color: #1c1c1c;
+}
+#services-outer-div {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  /* background-color: #1c1c1c; */
+  /* border: 2px solid red; */
+}
+
+#services-left-div {
+  width: 45%;
+  /* height: 100%; */
+  display: flex;
+  color: #f9faf4;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 2px solid green; */
+}
+
+#services-header {
+  font-size: 45px;
+}
+
+#services-header h1 {
+  margin: 10px;
+}
+
+#services-right-div {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  /* align-items: space-evenly; */
+  font-size: 15px;
+  padding: 50px 10px;
+  /* border: 2px solid green; */
+}
+
+.services-mini-div {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  color: #dfdfdf;
+  /* border: 2px solid red; */
+}
+
+.services-mini-div h1 {
+  color: #907ce1;
+  padding: 0;
+  /* border: 2px solid green; */
+}
+
+.services-mini-div h2 {
+  padding: 0;
+  /* border: 2px solid green; */
+}
+
+.services-mini-div p {
+  padding: 0;
+  /* border: 2px solid green; */
+}
+
+/* Section 5: Feedback * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+
+#feedback-outer-div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* border: 2px solid red; */
+}
+
+#feedback-outer-div h1 {
+  font-size: 60px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+#feedback-inner-div {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 80px;
+  gap: 40px;
+  /* border: 2px solid red; */
+}
+
+.feedback-mini-div {
+  width: 45%;
+  height: 80%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 50px;
+  /* border: 2px solid green; */
+}
+
+.feedback-mini-div p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.feedback-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 2px solid blue; */
+}
+
+.feedback-profile-header p {
+  margin: 10px;
+}
+
+#feedback-1 {
+  background-color: #dbdbdb;
+}
+
+#feedback-2 {
+  background-color: #907ce1;
+  color: #f9faf4;
+}
+
+#feedback-3 {
+  background-color: #1c1c1c;
+  color: #f9faf4;
+}
+
+/* Section 6: Contact * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+
+#contact {
+  background-color: #1c1c1c;
+  /* border: 2px solid blue; */
+}
+
+#contact h3 {
+  color: #1c1c1c;
+}
+
+#contact-inner-div {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+}
+
+#contact-left-div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+#contact-header {
+  font-size: 45px;
+  padding: 20px;
+  /* border: 2px solid red; */
+}
+
+#contact-header h1 {
+  margin: 10px;
+  color: #f9faf4;
+}
+
+#contact-right-div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid green; */
+}
+
+button {
+  width: 220px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #907ce1;
+  color: #f9faf4;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: #dfd9f6;
+  color: #1c1c1c;
+}
+
+/* Footer * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
+
+footer {
+  text-align: center;
+}
