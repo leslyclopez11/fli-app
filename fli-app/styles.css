@@ -684,4 +684,205 @@ footer {
   text-align: center;
 }
 
+media (max-width: 1200px) {
+  #nav {
+    padding: 15px 20px;
+  }
+
+  #about {
+    width: 40%;
+    margin: 50px 30px;
+  }
+
+  #about-header {
+    font-size: 50px;
+  }
+
+  #about-text {
+    font-size: 18px;
+  }
+
+  #mission-header {
+    font-size: 40px;
+  }
+
+  #tools-header {
+    font-size: 40px;
+  }
+
+  .tools-mini-div {
+    width: 50%;
+  }
+
+  #services-header {
+    font-size: 40px;
+  }
+
+  .services-mini-div {
+    height: 25%;
+
+  }
+
+  #feedback-outer-div h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  #nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 10px;
+  }
+
+  #about {
+    width: 100%;
+    margin: 30px 10px;
+  }
+
+  #about-header {
+    font-size: 40px;
+  }
+
+  #about-text {
+    font-size: 16px;
+  }
+
+  #mission-header {
+    font-size: 35px;
+  }
+
+  #tools-header {
+    font-size: 35px;
+  }
+
+  .tools-mini-div {
+    width: 100%;
+  }
+
+  #services-header {
+    font-size: 35px;
+  }
+
+  .services-mini-div {
+    height: 30%;
+  }
+
+  #feedback-outer-div h1 {
+    font-size: 45px;
+  }
+
+  button {
+    width: 180px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav {
+    padding: 15px;
+  }
+
+  #about {
+    width: 100%;
+    margin: 20px;
+  }
+
+  #about-header {
+    font-size: 35px;
+  }
+
+  #about-text {
+    font-size: 14px;
+  }
+
+  #mission-header {
+    font-size: 30px;
+  }
+
+  #tools-header {
+    font-size: 30px;
+  }
+
+  .tools-mini-div {
+    width: 100%;
+    height: auto;
+  }
+
+  #services-header {
+    font-size: 30px;
+  }
+
+  .services-mini-div {
+    height: auto;
+  }
+
+  #feedback-outer-div h1 {
+    font-size: 40px;
+  }
+
+  button {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  #nav {
+    flex-direction: column;
+  }
+
+  #about {
+    margin: 10px;
+  }
+
+  #about-header {
+    font-size: 30px;
+  }
+
+  #about-text {
+    font-size: 12px;
+  }
+
+  #mission-header {
+    font-size: 28px;
+  }
+
+  #tools-header {
+    font-size: 28px;
+  }
+
+  .tools-mini-div {
+    width: 100%;
+    height: auto;
+  }
+
+  #services-header {
+    font-size: 28px;
+  }
+
+  .services-mini-div {
+    height: auto;
+  }
+
+  #feedback-outer-div h1 {
+    font-size: 35px;
+  }
+
+  button {
+    width: 140px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  button {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
 
