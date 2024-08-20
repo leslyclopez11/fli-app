@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    
     <title>Fli App</title>
 </head>
 <body>
     <section id="landing">
-        <div id="nav">
-            <img src="images/logo.png" alt="Fli App Logo">
-            <ul>
+        <nav id="navbar">
+            <a href="#" id="logo">
+                <img src="images/newLogo-transparent.png" alt="Fli App Logo">
+            </a>
+            <h1>nextGen</h1>
+            <ul id="nav-links">
                 <li><a href="#mission_statement">Mission Statement</a></li>
                 <li><a href="#tools">Tools</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#feedback">Feedback</a></li>
                 <li><a href="#contact">Connect</a></li>
             </ul>
-        </div>
-        <hr>
+            <button id="menu-toggle">☰</button>
+    
+        </nav>
         <div id="about-div">
             <div id="about">
-                <h1 id="about-header">EMPOWERING FUTURES THROUGH OPPORTUNITIES</h1>
+                <h1 id="about-header">EMPOWERING FUTURES THROUGH <span class="highlight">OPPORTUNITIES</span></h1>
                 <p id="about-text">Your gateway to valuable internships and opportunities for first-generation, low-income, 
                     international, and undocumented students. Explore Internship/Fellowship opportunities all year round!</p>
             </div>
@@ -39,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <hr>
+        
     </section>
 
 
@@ -88,18 +93,18 @@
             <div id="tools-right-div">
                 <div id="tools-right-1" class="tools-mini-div">
                     <!-- <img src="images/pexels" alt="Tools Image"> -->
-                    <p><b>Find</b> the perfect opportunity for you</p>
+                    <p style="font-size: 28px;"><b>Find</b> the perfect opportunity for you</p>
                 </div>
                 <div id="tools-right-2" class="tools-mini-div">
                    <!-- <img src="images/tools-1.png" alt="Tools Image"> -->
-                    <p><b>Belong</b> and feel part of a community</p>
+                    <p style="font-size: 28px;"><b>Belong</b> and feel part of a community</p>
                 </div>
                 <div id="tools-right-3" class="tools-mini-div">
                     <!-- <img src="images/tools-1.png" alt="Tools Image"> -->
-                    <p><b>Grow</b> your skills and shape your career</p>
+                    <p style="font-size: 28px;"><b>Grow</b> your skills and shape your career</p>
                 </div>
                 <div id="tools-right-4" class="tools-mini-div">
-                    <img src="images/logo.png" alt="Logo Image">
+                    <img src="images/menComputer-transparent.png" alt="Men Image">
                 </div>
             </div>
         </div>
@@ -153,7 +158,6 @@
     <section id="feedback">
         <div id="feedback-outer-div">
             <h1>What our users say</h1>
-            <hr>
             <div id="feedback-inner-div">
                 <div id="feedback-1" class="feedback-mini-div">
                     <!-- vscode copilot generated feedback. we should discuss as team what to actually put -->
@@ -163,10 +167,10 @@
                         valuable opportunities."</p>
                     <div class="feedback-profile">
                         <div class="feedback-profile-header">
-                            <p>Lesly Catota Lopez </p>
+                            <p>Andrea Banuelos </p>
                             <p>Swarthmore College</p>
                         </div>
-                        <img src="images/feedback-1.png" alt="Feedback Image">
+                        <img src="images/andreaH.jpeg" alt="Feedback Image" class="feedback-img">
 
                     </div>
                 </div>
@@ -178,10 +182,10 @@
                         future holds for me!"</p>
                     <div class="feedback-profile">
                         <div class="feedback-profile-header">
-                            <p>Tina Chen</p>
+                            <p>Brenda Feregrino</p>
                             <p>Swarthmore College</p>
                         </div>
-                        <img src="images/feedback-1.png" alt="Feedback Image">
+                        <img src="images/brendaH.jpeg" alt="Feedback Image" class="feedback-img"> 
 
                     </div>
                 </div>
@@ -196,7 +200,7 @@
                             <p class="bold">Amy Lee</p>
                             <p>University of Washington</p>
                         </div>
-                        <img src="images/feedback-1.png" alt="Feedback Image">
+                        <img src="images/images" alt="Feedback Image" class="feedback-img">
                     </div>
                 </div>
             </div>
@@ -207,19 +211,18 @@
     <section id="contact">
         <div id="contact-outer-div">
             <h3>Connect with us</h3> <!--leave this here - for CSS purposes-->
-            <hr>
             <div id="contact-inner-div">
                 <div id="contact-left-div">
                     <div id="contact-header">
                         <h1>Discover</h1>
-                        <h1 class="purple">Opportunities</h1>
+                        <h1 class="purple">Opportunities,</h1>
                         <h1>Empower Your</h1>
                         <h1 class="purple">Future!</h1>
                     </div>
-                    <button>Join Our Mailing List!</button>
+                    <button id="mail">Join Our Mailing List!</button>
                 </div>
                 <div id="contact-right-div">
-                    <img src="images/logo.png" alt="Contact Image">
+                    <img src="images/finalPic1.jpg" alt="Contact Image">
                 </div>
             </div>
             </div>
@@ -227,8 +230,10 @@
 
 
     <footer>
-        <p>&copy; 2024 All rights reserved</p>
+        <p>&copy; 2024 nextGen. All rights reserved</p>
     </footer>
+
+    <script src="landingPage.js"></script>
     
 </body>
 </html>
