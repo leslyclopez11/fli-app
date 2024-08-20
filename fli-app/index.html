@@ -92,15 +92,15 @@
                 </div>
             <div id="tools-right-div">
                 <div id="tools-right-1" class="tools-mini-div">
-                    <!-- <img src="images/pexels" alt="Tools Image"> -->
+                    <img src="images/noun-target-7117985.png" alt="Tools Image">
                     <p style="font-size: 28px;"><b>Find</b> the perfect opportunity for you</p>
                 </div>
                 <div id="tools-right-2" class="tools-mini-div">
-                   <!-- <img src="images/tools-1.png" alt="Tools Image"> -->
+                   <img src="images/noun-shaking-hands-6896690.png" alt="Tools Image"> 
                     <p style="font-size: 28px;"><b>Belong</b> and feel part of a community</p>
                 </div>
                 <div id="tools-right-3" class="tools-mini-div">
-                    <!-- <img src="images/tools-1.png" alt="Tools Image"> -->
+                    <img src="images/noun-rocket-1628796.png" alt="Tools Image"> 
                     <p style="font-size: 28px;"><b>Grow</b> your skills and shape your career</p>
                 </div>
                 <div id="tools-right-4" class="tools-mini-div">
@@ -210,28 +210,71 @@
 
     <section id="contact">
         <div id="contact-outer-div">
-            <h3>Connect with us</h3> <!--leave this here - for CSS purposes-->
-            <div id="contact-inner-div">
-                <div id="contact-left-div">
-                    <div id="contact-header">
-                        <h1>Discover</h1>
-                        <h1 class="purple">Opportunities,</h1>
-                        <h1>Empower Your</h1>
-                        <h1 class="purple">Future!</h1>
+          <h3>Connect with us</h3> <!--leave this here - for CSS purposes-->
+          <div id="contact-inner-div">
+            <div id="contact-left-div">
+              <div id="contact-header">
+                <h1>Discover</h1>
+                <h1 class="purple">Opportunities,</h1>
+                <h1>Empower Your</h1>
+                <h1 class="purple">Future!</h1>
+              </div>
+              <!-- Mailchimp Signup Button -->
+              <button id="show-mailchimp-form" class="button">Join our mailing list!</button>
+              
+              <!-- Mailchimp Signup Form (initially hidden) -->
+              <div id="mc_embed_shell" style="display: none;">
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                  #mc_embed_signup { background: #fff; clear: left; font: 14px Helvetica, Arial, sans-serif; width: 100%; }
+                  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block. */
+                </style>
+                <div id="mc_embed_signup">
+                  <form action="https://gmail.us12.list-manage.com/subscribe/post?u=c75f71cce723ccd2d60c68333&amp;id=b9abe87074&amp;f_id=000c75e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <div id="mc_embed_signup_scroll">
+                      <h2>Hear more about NextGen!</h2>
+                      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                      <div class="mc-field-group">
+                        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                      </div>
+                      <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                      </div>
+                      <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_c75f71cce723ccd2d60c68333_b9abe87074" tabindex="-1" value="">
+                      </div>
+                      <div class="optionalParent">
+                        <div class="clear foot">
+                          <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                        </div>
+                      </div>
                     </div>
-                    <button id="mail">Join Our Mailing List!</button>
+                  </form>
                 </div>
-                <div id="contact-right-div">
-                    <img src="images/finalPic1.jpg" alt="Contact Image">
-                </div>
+                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                <script type="text/javascript">
+                  (function($) {
+                    window.fnames = new Array(); window.ftypes = new Array();
+                    fnames[0]='EMAIL'; ftypes[0]='email'; fnames[1]='FNAME'; ftypes[1]='text'; fnames[2]='LNAME'; ftypes[2]='text'; fnames[3]='ADDRESS'; ftypes[3]='address'; fnames[4]='PHONE'; ftypes[4]='phone'; fnames[5]='BIRTHDAY'; ftypes[5]='birthday';
+                  }(jQuery)); var $mcj = jQuery.noConflict(true);
+                </script>
+              </div>
             </div>
+            <div id="contact-right-div">
+              <img src="images/finalPic1.jpg" alt="Contact Image">
             </div>
-    </section>
+          </div>
+        </div>
+      </section>
+      
+
+    
 
 
     <footer>
         <p>&copy; 2024 nextGen. All rights reserved</p>
-    </footer>
 
     <script src="landingPage.js"></script>
     

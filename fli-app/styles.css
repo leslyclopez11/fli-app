@@ -184,7 +184,7 @@ hr {
   background-color: #dbdbdb;
   background-size: cover;
   background-position: center;
-  background-image: url('images/pexels-canvastudio-3153207.jpg ');
+  background-image: url('images/pexels-artempodrez-6779535.jpg');
 }
 
 #about-img-separator {
@@ -201,8 +201,8 @@ hr {
   border-radius: 25px;
   /* border: 2px solid orange; */
   background-color: #dfd9f6;
-  background-image: url('images/pexels-fauxels-3183183.jpg ');
-  background-position: center;
+  background-image: url('images/pexels-fauxels-3183186.jpg');
+  background-position: top;
   background-size: cover;
 }
 
@@ -211,7 +211,7 @@ hr {
   border-radius: 25px;
   /* border: 2px solid orange; */
   background-color: #907ce1;
-  background-image: url('images/pexels-fauxels-3184291.jpg ');
+  background-image: url('images/pexels-thisisengineering-3861972.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -353,10 +353,15 @@ hr {
   margin: 100px 20px 20px 50px;
   background-color: #907ce1;
   color: #dfdfdf;
-  /*background-image: url('images/pexels-thisisengineering-3861973.jpg'); */
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
+
+#tools-right-1 img{
+  width:130px;
+  height:auto;
+}
+
 
 #tools-right-2 {
   margin: 0px 20px 0px 50px;
@@ -367,6 +372,13 @@ hr {
   
 }
 
+
+#tools-right-2 img{
+  width:130px;
+  height:auto;
+}
+
+
 #tools-right-3 {
   margin: 100px 50px 20px 0px;
   background-color: #1c1c1c;
@@ -374,6 +386,11 @@ hr {
    /*background-image: url('images/pexels-polina-zimmerman-3782228.jpg');*/
   background-position: center;
   background-size: cover;
+}
+
+#tools-right-3 img{
+  width:120px;
+  height:auto;
 }
 
 #tools-right-4 {
@@ -545,9 +562,9 @@ hr {
 
 /* Section 6: Contact * *  * *  * *  * *  * *  * *  * *  * *  * * */
 
+/* Existing CSS styles */
 #contact {
   background-color: #1c1c1c;
-  /* border: 2px solid blue; */
 }
 
 #contact h3 {
@@ -558,7 +575,6 @@ hr {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
-  /* border: 2px solid red; */
 }
 
 #contact-left-div {
@@ -567,13 +583,11 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid red; */
 }
 
 #contact-header {
   font-size: 45px;
   padding: 20px;
-  /* border: 2px solid red; */
 }
 
 #contact-header h1 {
@@ -586,12 +600,12 @@ hr {
   align-items: center;
   margin-left: 20px;
 }
+
 #contact-right-div img {
   width: auto; /* Adjust the size as needed */
-  height: 450px;; /* Keep the aspect ratio */
+  height: 450px; /* Keep the aspect ratio */
   border-radius: 15px; /* Adjust the value for rounding the corners */
   max-width: 100%; /* Make sure it’s responsive */
-  
 }
 
 button {
@@ -610,6 +624,59 @@ button:hover {
   background-color: #dfd9f6;
   color: #1c1c1c;
 }
+
+/* Additional CSS for Mailchimp Form */
+#mc_embed_signup {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px; /* Adjust as needed */
+  margin-left: 0; /* Reset margin-left */
+  position: relative; /* Enable relative positioning */
+  left: -20px; /* Adjust this value to move the box left */
+}
+
+
+
+
+#mc_embed_signup h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#mc_embed_signup .mc-field-group {
+  margin-bottom: 15px;
+}
+
+#mc_embed_signup label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#mc_embed_signup input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#mc_embed_signup .button {
+  background-color: #907ce1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#mc_embed_signup .button:hover {
+  background-color: #6a5acd;
+}
+
 
 /* Footer * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
 
