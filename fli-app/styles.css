@@ -6,12 +6,13 @@
 */
 
 /* * * * * * * *  * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700;800&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700;800&display=swap"); */
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Be Vietnam Pro", sans-serif;
+  /* font-family: "Be Vietnam Pro", sans-serif; */
+  font-family: "Inter", sans-serif;
   background-color: #ffffff;
 }
 
@@ -25,7 +26,6 @@ section {
 
 /* Section 1: Landing * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
 
-
 #navbar {
   display: flex;
   align-items: center;
@@ -37,20 +37,19 @@ section {
 }
 
 #logo img {
-  height: 35px; 
+  height: 35px;
   max-height: 100%;
   width: auto;
 }
 
 #navbar h1 {
-  font-family: 'League Spartan', sans-serif;
-  font-size: 30px; 
+  font-family: "League Spartan", sans-serif;
+  font-size: 30px;
   color: #0e0e0e;
   margin: 0;
   display: flex;
-  align-items: center; 
+  align-items: center;
   margin-left: 45px;
-  
 }
 
 #logo {
@@ -59,7 +58,6 @@ section {
   justify-content: center;
   position: absolute;
   margin-right: 0px;
-  
 }
 
 #nav-links {
@@ -90,7 +88,6 @@ section {
 
 #menu-toggle:hover {
   background-color: #dbdbdb;
-  
 }
 
 /* Responsive styles */
@@ -119,7 +116,6 @@ section {
 }
 
 /* before*/
-
 
 ul {
   display: flex;
@@ -164,7 +160,7 @@ hr {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
   max-height: fit-content;
 }
 
@@ -184,7 +180,7 @@ hr {
   background-color: #dbdbdb;
   background-size: cover;
   background-position: center;
-  background-image: url('images/pexels-artempodrez-6779535.jpg');
+  background-image: url("images/pexels-artempodrez-6779535.jpg");
 }
 
 #about-img-separator {
@@ -201,7 +197,7 @@ hr {
   border-radius: 25px;
   /* border: 2px solid orange; */
   background-color: #dfd9f6;
-  background-image: url('images/pexels-fauxels-3183186.jpg');
+  background-image: url("images/pexels-fauxels-3183186.jpg");
   background-position: top;
   background-size: cover;
 }
@@ -211,7 +207,7 @@ hr {
   border-radius: 25px;
   /* border: 2px solid orange; */
   background-color: #907ce1;
-  background-image: url('images/pexels-thisisengineering-3861972.jpg');
+  background-image: url("images/pexels-thisisengineering-3861972.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -266,7 +262,6 @@ hr {
   background-color: #dfd9f6;
   object-position: center;
   object-fit: cover;
-
 }
 
 #mission-right-div {
@@ -284,7 +279,7 @@ hr {
 
 #mission-text {
   width: 80%;
-  
+
   /* border: 2px solid blue; */
 }
 
@@ -339,13 +334,15 @@ hr {
 }
 
 .tools-mini-div p {
-  padding: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
   margin: 0;
   font-size: 20px;
 }
 
 .tools-mini-div img {
-  padding: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
   margin: 0;
 }
 
@@ -357,11 +354,10 @@ hr {
   background-size: contain;
 }
 
-#tools-right-1 img{
-  width:130px;
-  height:auto;
+#tools-right-1 img {
+  width: 130px;
+  height: auto;
 }
-
 
 #tools-right-2 {
   margin: 0px 20px 0px 50px;
@@ -369,28 +365,25 @@ hr {
   /*background-image: url('images/pexels-cottonbro-3205570.jpg'); */
   background-position: center;
   background-size: cover;
-  
 }
 
-
-#tools-right-2 img{
-  width:130px;
-  height:auto;
+#tools-right-2 img {
+  width: 130px;
+  height: auto;
 }
-
 
 #tools-right-3 {
   margin: 100px 50px 20px 0px;
   background-color: #757575;
   color: #dfdfdf;
-   /*background-image: url('images/pexels-polina-zimmerman-3782228.jpg');*/
+  /*background-image: url('images/pexels-polina-zimmerman-3782228.jpg');*/
   background-position: center;
   background-size: cover;
 }
 
-#tools-right-3 img{
-  width:120px;
-  height:auto;
+#tools-right-3 img {
+  width: 120px;
+  height: auto;
 }
 
 #tools-right-4 {
@@ -440,7 +433,7 @@ hr {
 
 #services-right-div p {
   padding-right: 5%; /* Use percentage instead of fixed pixel values */
-  padding-left: 5%;  /* This makes the padding more responsive */
+  padding-left: 5%; /* This makes the padding more responsive */
   text-align: right;
 }
 
@@ -452,10 +445,6 @@ hr {
 #services-right-div h2 {
   padding: 0;
 }
-
-
-
-
 
 .services-mini-div {
   height: 20%;
@@ -540,7 +529,6 @@ hr {
   align-items: center;
   /* border: 2px solid blue; */
 }
-
 
 .feedback-profile-header p {
   margin: 10px;
@@ -638,9 +626,6 @@ button:hover {
   left: -20px; /* Adjust this value to move the box left */
 }
 
-
-
-
 #mc_embed_signup h2 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -676,7 +661,6 @@ button:hover {
 #mc_embed_signup .button:hover {
   background-color: #6a5acd;
 }
-
 
 /* Footer * *  * *  * *  * *  * *  * *  * *  * *  * *  * * */
 
@@ -720,7 +704,6 @@ footer {
 
   .services-mini-div {
     height: 25%;
-
   }
 
   #feedback-outer-div h1 {
@@ -885,4 +868,3 @@ footer {
     font-size: 12px;
   }
 }
-
