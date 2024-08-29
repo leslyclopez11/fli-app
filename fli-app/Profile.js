@@ -2,12 +2,12 @@ const mongoose = require('./db');
 var Schema = mongoose.Schema;
 
 var profileSchema = new Schema({
-	name: String, 
+	name: {type: String, required: true},
 	// link: String,
 	pronouns: String,
 	classyear: String,
 	username: {type: String, required: true, unique: true},
-	password: String,
+	password: {type: String, required: true},
 	programs: []
 	});
 
