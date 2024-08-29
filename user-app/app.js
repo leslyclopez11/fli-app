@@ -2,8 +2,8 @@ const express = require('express');
 const sessions = require('express-session');
 const cookieParser = require("cookie-parser");
 //const mongoose = require('mongoose');
-const mongoose = require('../fli-app/db');
-const User = require('./RegisterUser');
+const mongoose = require('../fli-app/db.js');
+const Profile = require('../fli-app/Profile.js');
 
 
 const app = express();
@@ -50,10 +50,10 @@ app.get('/test', (req,res) => {
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
 
-    User.findOne({ username: username, password: password })
+    Profile.findOne({ username: username, password: password })
         .then(user => {
             if (!user) {
-                res.send('Invalid username or password');
+                res.send('Invalid username or password' + username + " " +  password);
             } else {
                 session = req.session;
                 session.userid = user.username;
@@ -68,7 +68,7 @@ app.post('/login', (req, res) => {
 
 app.post('/register', (req, res) => {
     const { newUsername, newPassword, name, pronouns, classyear, programs } = req.body;
-    const newUser = new User({
+    const newUser = new Profile({
         username: newUsername,
         password: newPassword,
         name,
@@ -92,7 +92,7 @@ app.get('/getProfile', (req, res) => {
         return res.status(401).send('Unauthorized');
     }
 
-    User.findOne({ username: req.session.userid })
+    Profile.findOne({ username: req.session.userid })
         .then(user => {
             if (!user) {
                 return res.status(404).send('User not found');
@@ -117,7 +117,7 @@ app.post('/updateProfile', (req, res) => {
 
     const { name, pronouns, classyear } = req.body;
 
-    User.findOneAndUpdate(
+    Profile.findOneAndUpdate(
         { username: req.session.userid },
         { name, pronouns, classyear },
         { new: true }
@@ -148,13 +148,13 @@ app.post('/updatePassword', (req, res) => {
 
     const { username, currentPassword, newPassword } = req.body;
 
-    User.findOne({ username: username, password: currentPassword })
+    Profile.findOne({ username: username, password: currentPassword })
         .then(user => {
             if (!user) {
                 return res.status(400).send('Current password is incorrect');
             }
 
-            User.findOneAndUpdate(
+            Profile.findOneAndUpdate(
                 { username: username },
                 { password: newPassword },
                 { new: true }

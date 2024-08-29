@@ -19,10 +19,10 @@
         <form action="/login" method="post">
             <h2>Login</h2>
             <div class="input-field">
-                <input type="text" name="username" id="username" placeholder="Enter Username">
+                <input type="text" name="username" id="username" placeholder="Enter Username" required>
             </div>
             <div class="input-field">
-                <input type="password" name="password" id="password" placeholder="Enter Password">
+                <input type="password" name="password" id="password" placeholder="Enter Password" required>
             </div>
             <input type="submit" value="LogIn">
             <button type="button" onclick="showRegisterForm()">Create a new account</button>
@@ -33,19 +33,19 @@
         <form action="/register" method="post">
             <h2>Create a new account</h2>
             <div class="input-field">
-                <input type="text" name="newUsername" id="newUsername" placeholder="Enter Username">
+                <input type="text" name="newUsername" id="newUsername" placeholder="Enter Username" required>
             </div>
             <div class="input-field">
-                <input type="password" name="newPassword" id="newPassword" placeholder="Enter Password">
+                <input type="password" name="newPassword" id="newPassword" placeholder="Enter Password" required>
             </div>
             <div class="input-field">
-                <input type="text" name="name" id="name" placeholder="Enter Name">
+                <input type="text" name="name" id="name" placeholder="Enter Name" required>
             </div>
             <div class="input-field">
-                <input type="text" name="pronouns" id="pronouns" placeholder="Enter Pronouns">
+                <input type="text" name="pronouns" id="pronouns" placeholder="Enter Pronouns" >
             </div>
             <div class="input-field">
-                <input type="text" name="classyear" id="classyear" placeholder="Enter Class Year">
+                <input type="text" name="classyear" id="classyear" placeholder="Enter Class Year" >
             </div>
             <input type="submit" value="Register">
             <button type="button" onclick="showLoginForm()">Back to Login</button>
