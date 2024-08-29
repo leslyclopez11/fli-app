@@ -53,7 +53,6 @@ app.post('/login', (req, res) => {
     Profile.findOne({ username: username, password: password })
         .then(user => {
             if (!user) {
-                console.log("AAAAA");
                 res.send('Invalid username or password' + username + " " +  password);
             } else {
                 session = req.session;
